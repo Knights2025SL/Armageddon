@@ -1,0 +1,195 @@
+❓ Labs 1–5 FAQ
+“Why are we doing this and what is the point?”
+
+1) Why are these labs so long and interconnected?
+Because real systems are.
+
+In real jobs:
+    Infrastructure is not isolated
+    One decision affects networking, security, compliance, and people
+    Problems rarely come with clean instructions
+
+These labs are intentionally connected so you experience:
+    dependency
+    consequence
+    context
+
+You are not being trained to follow steps.
+You are being trained to understand systems.
+
+2) Are these labs realistic, or just academic exercises?
+They are realistic. Uncomfortably so.
+Everything you’ve built is based on:
+    real enterprise patterns
+    real compliance constraints
+    real failure modes
+    real audit expectations
+
+Nothing here is “toy cloud.”
+Many professionals encounter this for the first time on the job.
+
+You’re seeing it now.
+
+3) Why do we keep talking about compliance and law? I just want to build things.
+Because building the wrong thing is worse than building nothing.
+In regulated industries (healthcare, finance, government):
+    “It works” is not enough
+    “It’s encrypted” is not enough
+    “It’s fast” is not enough
+
+You must also answer:
+    Is this legal?
+    Can we defend this to an auditor?
+    Who is responsible if this fails?
+
+These labs teach you how to build systems that are allowed to exist.
+
+4) Why don’t we just replicate databases everywhere to make things easy?
+Because you are learning the difference between engineering and shortcuts.
+Replication sounds nice until:
+    laws prohibit it
+    auditors ask questions
+    fines appear
+    careers end
+
+In these labs, availability is intentionally subordinate to legality.
+That is a professional judgment call — not a technical limitation.
+
+5) Why do we use both AWS and GCP? Isn’t that confusing?
+Yes. On purpose.
+In the real world:
+    not all teams use the same cloud
+    not all contracts align
+    not all regions allow the same services
+
+Multi-cloud isn’t about preference.
+It’s about reality.
+
+These labs teach you how to:
+    reason across platforms
+    apply the same principles everywhere
+    avoid cloud-specific tunnel vision
+
+6) Why are we using Terraform instead of the console?
+Because companies do not trust clicks.
+Terraform provides:
+    repeatability
+    reviewability
+    auditability
+    rollback
+    shared understanding
+
+If you can’t express infrastructure as code, you:
+    can’t scale
+    can’t prove what you did
+    can’t safely collaborate
+
+These labs teach professional infrastructure, not demos.
+
+7) Why do we collect evidence before fixing things?
+Because auditors don’t care what you meant to do.
+    They care about:
+    what existed
+    what changed
+    when it changed
+    why it changed
+
+Evidence-first incident response:
+    protects you
+    protects the company
+    prevents panic mistakes
+
+This habit separates senior engineers from frantic ones.
+
+8) Why are we using AI (Bedrock / Vertex) if humans still decide?
+Because AI is a tool, not authority.
+In real environments:
+    AI can draft reports
+    AI can summarize evidence
+    AI can save time
+
+But:
+    AI cannot accept responsibility
+    AI cannot be fined
+    AI cannot testify
+
+You are learning how to use AI without surrendering judgment.
+That is a critical modern skill.
+
+9) Why is there so much emphasis on “human override”?
+Because the system must stop with you.
+If something goes wrong:
+    regulators don’t call the model
+    auditors don’t question the algorithm
+    courts don’t subpoena AI
+
+They talk to humans.
+This is why every AI-assisted step requires:
+    review
+    correction
+    explicit acceptance
+
+10) I feel lost. Does that mean I’m bad at this?
+No. It usually means the opposite.
+You feel lost because:
+    you can see the complexity
+    you understand the stakes
+    you realize there are tradeoffs
+
+People who don’t feel lost:
+    usually don’t see the whole system
+    often oversimplify
+    break things without noticing
+
+Discomfort here is growth, not failure.
+
+11) Are these labs preparing me for “real jobs,” or are they overkill?
+They prepare you for fewer, better jobs.
+Not:
+    every IT role
+    every junior position
+    every script-runner job
+
+But yes for:
+    cloud engineering
+    platform roles
+    DevOps / SRE
+    regulated industries
+    global companies
+    higher-trust positions
+
+These labs narrow the field, but raise the ceiling.
+
+12) What am I supposed to say in interviews about these labs?
+You don’t list every step.
+You say things like:
+    “I designed multi-cloud systems under compliance constraints.”
+    “I’ve done evidence-first incident response.”
+    “I’ve worked with Terraform in multi-state environments.”
+    “I’ve used AI for drafting but enforced human accountability.”
+
+Those are senior-sounding answers because they reflect senior thinking.
+
+
+13) What is the actual purpose of all of this?
+"To get your B**** @** a job!"
+The purpose is trust.
+
+These labs train you to build systems that:
+    other engineers can trust
+    companies can defend
+    regulators can approve
+    users can rely on
+
+You are not being trained to “pass a test.”
+You are being trained to be:
+    --> someone organizations trust with real systems and real consequences
+
+Final Note (Read This Twice)
+If these labs feel heavy, confusing, or slow:
+    that is normal
+    that is expected
+    that is intentional
+You are learning how professionals think, not how tutorials pretend the world works.
+That is the point.
+

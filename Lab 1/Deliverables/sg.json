@@ -1,0 +1,40 @@
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-06acc7fe50aac92b0",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-06972aa5762b52bf3",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:461593447802:security-group/sg-06acc7fe50aac92b0",
+            "OwnerId": "461593447802",
+            "GroupName": "ec2-lab-sg",
+            "Description": "ec2-lab-sg",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 80,
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}

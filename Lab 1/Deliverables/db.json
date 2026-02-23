@@ -1,0 +1,103 @@
+{
+    "DBInstances": [
+        {
+            "DBInstanceIdentifier": "lab-mysql",
+            "DBInstanceClass": "db.t4g.micro",
+            "Engine": "mysql",
+            "DBInstanceStatus": "available",
+            "MasterUsername": "admin",
+            "Endpoint": {
+                "Address": "lab-mysql.cef7de7jol4f.us-east-1.rds.amazonaws.com",
+                "Port": 3306,
+                "HostedZoneId": "Z2R2ITUGPM61AM"
+            },
+            "AllocatedStorage": 20,
+            "InstanceCreateTime": "2026-01-09T02:31:33.699000+00:00",
+            "PreferredBackupWindow": "04:28-04:58",
+            "BackupRetentionPeriod": 1,
+            "DBSecurityGroups": [],
+            "VpcSecurityGroups": [
+                {
+                    "VpcSecurityGroupId": "sg-0cb761eb3c5e93d1e",
+                    "Status": "active"
+                }
+            ],
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.mysql8.0",
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ],
+            "AvailabilityZone": "us-east-1b",
+            "DBSubnetGroup": {
+                "DBSubnetGroupName": "satellite-rds-subnet-group01",
+                "DBSubnetGroupDescription": "Managed by Terraform",
+                "VpcId": "vpc-06972aa5762b52bf3",
+                "SubnetGroupStatus": "Complete",
+                "Subnets": [
+                    {
+                        "SubnetIdentifier": "subnet-06d8152f6820339a8",
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1b"
+                        },
+                        "SubnetOutpost": {},
+                        "SubnetStatus": "Active"
+                    },
+                    {
+                        "SubnetIdentifier": "subnet-005cde8c3e352128b",
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1a"
+                        },
+                        "SubnetOutpost": {},
+                        "SubnetStatus": "Active"
+                    }
+                ]
+            },
+            "PreferredMaintenanceWindow": "thu:05:22-thu:05:52",
+            "UpgradeRolloutOrder": "second",
+            "PendingModifiedValues": {},
+            "LatestRestorableTime": "2026-01-09T03:35:00+00:00",
+            "MultiAZ": false,
+            "EngineVersion": "8.0.43",
+            "AutoMinorVersionUpgrade": true,
+            "ReadReplicaDBInstanceIdentifiers": [],
+            "LicenseModel": "general-public-license",
+            "StorageThroughput": 0,
+            "OptionGroupMemberships": [
+                {
+                    "OptionGroupName": "default:mysql-8-0",
+                    "Status": "in-sync"
+                }
+            ],
+            "PubliclyAccessible": false,
+            "StorageType": "gp2",
+            "DbInstancePort": 0,
+            "StorageEncrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:461593447802:key/78fdce97-b590-4db6-9b4f-facf066253e4",
+            "DbiResourceId": "db-5OKRTTZATMPSALWBHW43JVATCQ",
+            "CACertificateIdentifier": "rds-ca-rsa2048-g1",
+            "DomainMemberships": [],
+            "CopyTagsToSnapshot": true,
+            "MonitoringInterval": 0,
+            "DBInstanceArn": "arn:aws:rds:us-east-1:461593447802:db:lab-mysql",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "DatabaseInsightsMode": "standard",
+            "PerformanceInsightsEnabled": false,
+            "DeletionProtection": false,
+            "AssociatedRoles": [],
+            "MaxAllocatedStorage": 1000,
+            "TagList": [],
+            "CustomerOwnedIpEnabled": false,
+            "NetworkType": "IPV4",
+            "ActivityStreamStatus": "stopped",
+            "BackupTarget": "region",
+            "CertificateDetails": {
+                "CAIdentifier": "rds-ca-rsa2048-g1",
+                "ValidTill": "2027-01-09T02:30:11+00:00"
+            },
+            "DedicatedLogVolume": false,
+            "IsStorageConfigUpgradeAvailable": false,
+            "EngineLifecycleSupport": "open-source-rds-extended-support-disabled"
+        }
+    ]
+}
