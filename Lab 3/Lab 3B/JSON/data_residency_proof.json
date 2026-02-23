@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-02-20T12:15:52.540668Z",
+  "compliance_framework": "APPI",
+  "proof_type": "data_residency",
+  "rds_instances": {
+    "tokyo": [
+      {
+        "region": "ap-northeast-1",
+        "id": "chrisbarm-rds01",
+        "az": "ap-northeast-1c",
+        "endpoint": "chrisbarm-rds01.cjyguam6c4nd.ap-northeast-1.rds.amazonaws.com",
+        "multi_az": false,
+        "encrypted": false,
+        "engine": "mysql"
+      }
+    ],
+    "saopaulo": []
+  },
+  "rds_snapshots": {
+    "tokyo": [],
+    "saopaulo": []
+  },
+  "audit_s3_buckets": [
+    {
+      "bucket_name": "chrisbarm-cloudfront-logs-198547498722",
+      "region": "ap-northeast-1",
+      "compliant": true
+    },
+    {
+      "bucket_name": "chrisbarm-cloudtrail-logs-198547498722",
+      "region": "ap-northeast-1",
+      "compliant": true
+    },
+    {
+      "bucket_name": "chrisbarm-flowlogs-198547498722",
+      "region": "ap-northeast-1",
+      "compliant": true
+    },
+    {
+      "bucket_name": "chrisbarm-waf-logs-198547498722",
+      "region": "ap-northeast-1",
+      "compliant": true
+    }
+  ],
+  "compliance_check": {
+    "tokyo_has_rds": true,
+    "saopaulo_has_no_rds": true,
+    "snapshots_in_tokyo_only": false,
+    "assertion": "PASS \u2705"
+  }
+}

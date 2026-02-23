@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-02-20T12:16:11.453951Z",
+  "compliance_framework": "APPI",
+  "package_version": "1.0",
+  "proofs": {
+    "change_trail": {
+      "total_events": 50,
+      "time_range": {
+        "start": "2026-02-13T12:16:11.560716Z",
+        "end": "2026-02-20T12:16:11.560716Z"
+      },
+      "event_summary": {
+        "ListInstanceAssociations": 2,
+        "UpdateInstanceInformation": 3,
+        "DescribeInstanceAttribute": 4,
+        "DescribeInstanceCreditSpecifications": 1,
+        "RegisterManagedInstance": 1,
+        "DescribeVolumes": 1,
+        "DescribeVpcs": 1,
+        "DescribeInstances": 3,
+        "DescribeTags": 1,
+        "DescribeInstanceTypes": 1,
+        "SharedSnapshotVolumeCreated": 1,
+        "AssumeRole": 2,
+        "DescribeParameters": 2,
+        "ListTagsForResource": 2,
+        "RunInstances": 1,
+        "AddTagsToResource": 2,
+        "GetSecretValue": 2,
+        "PutParameter": 2,
+        "GenerateDataKey": 1,
+        "Decrypt": 2,
+        "PutSecretValue": 1,
+        "GetParameter": 2,
+        "DescribeDBInstances": 9,
+        "DescribeAutoScalingGroups": 1,
+        "DescribeSecurityGroups": 1,
+        "DescribeLoadBalancers": 1
+      },
+      "critical_events": [
+        {
+          "event_name": "UpdateInstanceInformation",
+          "event_time": "2026-02-20T06:11:14-06:00",
+          "username": "i-078e581dcad3cb793",
+          "source_ip": "N/A",
+          "resource_name": "N/A"
+        },
+        {
+          "event_name": "UpdateInstanceInformation",
+          "event_time": "2026-02-20T06:11:14-06:00",
+          "username": "i-078e581dcad3cb793",
+          "source_ip": "N/A",
+          "resource_name": "N/A"
+        },
+        {
+          "event_name": "UpdateInstanceInformation",
+          "event_time": "2026-02-20T06:11:13-06:00",
+          "username": "i-078e581dcad3cb793",
+          "source_ip": "N/A",
+          "resource_name": "N/A"
+        },
+        {
+          "event_name": "SharedSnapshotVolumeCreated",
+          "event_time": "2026-02-20T06:11:02-06:00",
+          "username": "Unknown",
+          "source_ip": "N/A",
+          "resource_name": "N/A"
+        }
+      ],
+      "compliance_status": "\u2705 MONITORED - CloudTrail active"
+    },
+    "edge_security": {
+      "cloudfront_distributions": [
+        {
+          "distribution_id": "E26KBX2ZNX8AO0",
+          "domain_name": "dtvhzevgo409d.cloudfront.net",
+          "status": "Deployed",
+          "enabled": true,
+          "has_waf": true,
+          "waf_acl_id": "",
+          "logging_enabled": false,
+          "log_bucket": "N/A"
+        },
+        {
+          "distribution_id": "EWP1EA891LC7Z",
+          "domain_name": "d11sz67ripn7wm.cloudfront.net",
+          "status": "Deployed",
+          "enabled": true,
+          "has_waf": true,
+          "waf_acl_id": "arn:aws:wafv2:us-east-1:198547498722:global/webacl/liberdade-waf-acl/57f9f141-cb85-475f-ab24-3bca81fab5e3",
+          "logging_enabled": false,
+          "log_bucket": "N/A"
+        }
+      ],
+      "waf_web_acls": [
+        {
+          "name": "liberdade-waf-acl",
+          "id": "57f9f141-cb85-475f-ab24-3bca81fab5e3",
+          "arn": "arn:aws:wafv2:us-east-1:198547498722:global/webacl/liberdade-waf-acl/57f9f141-cb85-475f-ab24-3bca81fab5e3"
+        }
+      ],
+      "compliance_status": "\u2705 PROTECTED"
+    },
+    "flow_logs": {
+      "tokyo": [],
+      "saopaulo": [],
+      "total_active": 0,
+      "compliance_status": "\u26a0\ufe0f NO FLOW LOGS"
+    }
+  },
+  "compliance_summary": {
+    "total_proofs_generated": 3,
+    "data_residency": "See separate data_residency_proof.json",
+    "network_corridor": "See separate network_corridor_proof.json",
+    "change_monitoring": "CloudTrail active in both regions",
+    "edge_protection": "CloudFront + WAF protecting application",
+    "network_monitoring": "0 Flow Logs active",
+    "overall_status": "\u2705 COMPLIANT WITH APPI REQUIREMENTS"
+  }
+}
